@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-func FetchWeather(city string, apiKey string) interface{} {
+func fetchWeather(city string, apiKey string) interface{} {
 	var data struct {
 		Main struct {
 			Temp float64 `json: "Temp"`
