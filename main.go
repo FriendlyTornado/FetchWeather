@@ -12,7 +12,7 @@ func main() {
 
 	for _, city := range cities {
 		data := weather.fetchWeather(city, apiKey)
-		fmt.PrintLn("Here is the weather in %s", data)
+		fmt.Printf("Here is the weather in %s", data)
 	}
 
 }
